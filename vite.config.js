@@ -54,10 +54,10 @@ export default defineConfig(({ mode }) => {
     ].filter(Boolean),
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './client/src'),
+        '@': path.resolve(__dirname, './src'),
       },
     },
-    root: path.join(process.cwd(), 'client'),
+    root: path.join(process.cwd(),),
     build: {
       outDir: path.join(process.cwd(), 'dist/public'),
       emptyOutDir: true,
